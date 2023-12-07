@@ -15,15 +15,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     const clearButton = document.getElementById("clear");
 
-  clearButton.addEventListener("click", function () {
+    clearButton.addEventListener("click", function () {
     // Clear high scores from localStorage
     localStorage.removeItem("highscores");
 
     // Update the displayed high scores
     const highscoresList = document.getElementById("highscores");
     highscoresList.innerHTML = ""; // Clear the existing list
-
-    // You can optionally display a message like "High scores cleared" or update UI as needed
   });
   });
   
